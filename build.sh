@@ -9,6 +9,7 @@ fi
 
 export GO111MODULE=on
 export GOPROXY=https://goproxy.io
+#export GOPROXY=direct
 
 for mod in $@; do
     go run build/ci.go install ./cmd/$mod
